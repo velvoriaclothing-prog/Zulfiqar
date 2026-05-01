@@ -686,4 +686,23 @@ footer {
     .grid-2 { grid-template-columns: 1fr; }
     .product-detail-grid { grid-template-columns: 1fr; }
     .about-preview { flex-direction: column; }
+    
+    /* Mobile Popup Fixes */
+    .popup-content {
+        padding: 2.5rem 1.5rem 1.5rem 1.5rem; /* Adjusted padding */
+        max-height: 92vh;
+        overflow-y: auto; /* Prevents popup from going off-screen */
+    }
+    .popup-close {
+        top: 2.5rem; /* Aligns perfectly with the top of the Enquiry text */
+        right: 1.5rem;
+        font-size: 1.8rem; /* Slightly larger for easier tapping */
+        background: rgba(0,0,0,0.5); /* Adds a subtle background in case it overlaps anything */
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
